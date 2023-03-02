@@ -10,26 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_01_191202) do
+ActiveRecord::Schema.define(version: 2023_03_02_181917) do
 
   create_table "categories", force: :cascade do |t|
+    t.string "title"
+    t.string "urgency"
     t.integer "todo_id"
     t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["todo_id"], name: "index_categories_on_todo_id"
+    t.index ["user_id"], name: "index_categories_on_user_id"
   end
 
   create_table "todos", force: :cascade do |t|
-    t.integer "todo_id"
-    t.string "title"
-    t.string "details"
+    t.string "location"
     t.string "duration"
-    t.string "urgency"
-    t.boolean "activity", default: false
+    t.string "notes"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "full_name"
     t.string "email"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
