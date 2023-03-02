@@ -6,7 +6,7 @@ class CreateTodos < ActiveRecord::Migration[6.1]
       t.string  :details
       t.string  :duration
       t.string  :urgency
-      t.boolean :activity, default: false
+      t.boolean :done?, default: false
     end
   end
 end
