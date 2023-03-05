@@ -10,20 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_02_181917) do
+ActiveRecord::Schema.define(version: 2023_03_05_153447) do
 
-  create_table "categories", force: :cascade do |t|
-    t.string "title"
-    t.string "urgency"
-    t.integer "todo_id"
+  create_table "combines", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "todo_id"
+    t.string "image_url"
+    t.string "full_name"
+    t.string "email"
+    t.string "phone_number"
+    t.string "category"
+    t.string "title"
+    t.string "location"
+    t.string "duration"
+    t.string "notes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["todo_id"], name: "index_categories_on_todo_id"
-    t.index ["user_id"], name: "index_categories_on_user_id"
   end
 
   create_table "todos", force: :cascade do |t|
+    t.string "category"
+    t.string "title"
     t.string "location"
     t.string "duration"
     t.string "notes"
@@ -32,10 +39,10 @@ ActiveRecord::Schema.define(version: 2023_03_02_181917) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "image_url"
     t.string "full_name"
     t.string "email"
     t.string "phone_number"
-    t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

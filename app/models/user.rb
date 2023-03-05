@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
-    has_many :categories
-    has_many :todos, through: :categories
-  end
+  has_many :combines
+  has_many :todos, through: :combines
+end

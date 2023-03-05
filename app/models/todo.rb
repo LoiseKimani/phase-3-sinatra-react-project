@@ -1,4 +1,4 @@
 class Todo < ActiveRecord::Base
-    has_many :categories
-    has_many :users, through: :categories
+    has_many :combines
+    has_many :users, through: :combines
   end
