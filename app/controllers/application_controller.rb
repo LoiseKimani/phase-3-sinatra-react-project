@@ -98,7 +98,7 @@ class ApplicationController < Sinatra::Base
     todo.to_json()
   end
 
-  
+
   # Delete a todo
   delete "/todos/:id" do
     todo = Todo.find_by(id: params[:id])
@@ -145,6 +145,7 @@ class ApplicationController < Sinatra::Base
     }.to_json()
   end
    
+  
     # Patch Combine
   patch "/combines/:id" do 
     combine = Combine.find_by(id: params[:id])
