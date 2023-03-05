@@ -98,6 +98,7 @@ class ApplicationController < Sinatra::Base
     todo.to_json()
   end
 
+  
   # Delete a todo
   delete "/todos/:id" do
     todo = Todo.find_by(id: params[:id])
