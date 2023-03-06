@@ -3,7 +3,6 @@ class CreateCombines < ActiveRecord::Migration[6.1]
     create_table :combines do |t|
       t.integer :user_id
       t.integer :todo_id   
-      t.string :image_url
       t.string :full_name
       t.string :email
       t.string :phone_number

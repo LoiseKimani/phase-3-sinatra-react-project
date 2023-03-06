@@ -19,7 +19,6 @@ class ApplicationController < Sinatra::Base
       full_name: params[:full_name],
       email: params[:email],
       phone_number: params[:phone_number],
-      image_url: params[:image_url]
     )
     user.save()
 
@@ -37,7 +36,6 @@ class ApplicationController < Sinatra::Base
       full_name: params[:full_name],
       email: params[:email],
       phone_number: params[:phone_number],
-      image_url: params[:image_url]
     )
 
     user.to_json()
@@ -127,7 +125,6 @@ class ApplicationController < Sinatra::Base
     combine = Combine.create(
       user_id: params[:user_id],
       todo_id: params[:todo_id],
-      image_url: params[:image_url],
       full_name: params[:full_name],
       email: params[:email],
       phone_number: params[:phone_number],
@@ -153,7 +150,6 @@ class ApplicationController < Sinatra::Base
     combine.update(
       user_id: params[:user_id],
       todo_id: params[:todo_id],
-      image_url: params[:image_url],
       full_name: params[:full_name],
       email: params[:email],
       phone_number: params[:phone_number],

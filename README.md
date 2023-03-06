@@ -1,3 +1,14 @@
+PROJECT PITCH.
+
+This project involves building a full-stack application that allows users to create, read, update, and delete to-do items using a React frontend and a Sinatra API backend. Each to-do item can be assigned to a category, and each category can have multiple to-do items associated with it.
+Some possible categories to include could be:
+Personal: For to-do items related to personal tasks, such as grocery shopping, cleaning, or appointments.
+Work: For to-do items related to work tasks, such as meetings, projects, or deadlines.
+Health: For to-do items related to health and fitness, such as workouts, meal planning, or doctor appointments.
+Education: For to-do items related to educational goals, such as studying, research, or online courses.
+Social: For to-do items related to social activities, such as events, outings, or gatherings.
+Overall, this project provides an excellent opportunity to practice using Active Record to interact with a database, build API routes in Sinatra, and implement good OO design patterns. Plus, it has practical applications for users who want to stay organized and productive in their daily lives.
+
 # Phase 3 Project Guidelines
 
 ## Learning Goals
@@ -136,3 +147,35 @@ fetch("http://localhost:9292/test")
 [dbdiagram.io]: https://dbdiagram.io/
 [postman download]: https://www.postman.com/downloads/
 [network tab]: https://developer.chrome.com/docs/devtools/network/
+
+## Development
+
+Want to contribute? Great!
+
+To fix a bug or enhance an existing module, follow these steps:
+- Fork the repo
+- Create a new branch (git checkout -b improve-feature)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (git commit -am 'Improve feature')
+- Push to the branch (git push origin improve-feature)
+- Create a Pull Request
+
+
+## Known Bugs
+
+If you find a bug (the website couldn't handle the query and or gave undesired results), kindly open an issue here by including your search query and the expected result.
+
+If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results.
+
+
+### License
+
+*PROJECT.*
+Copyright (c) 2023 **LOISE KIMANI**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
