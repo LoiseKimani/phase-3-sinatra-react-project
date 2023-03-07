@@ -1,3 +1,8 @@
+FRONT-END
+
+https://github.com/LoiseKimani/Phase-3-React-app-project..git
+
+
 PROJECT PITCH.
 
 This project involves building a full-stack application that allows users to create, read, update, and delete to-do items using a React frontend and a Sinatra API backend. Each to-do item can be assigned to a category, and each category can have multiple to-do items associated with it.
